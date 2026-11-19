@@ -1,60 +1,125 @@
 :host {
-  --edge: #f1c68c;
-  --shadow-rgb: 30 13 24;
+  --edge: #f5d77d;
+  --shadow-rgb: 12 10 26;
 }
 
-.front.s-ticket .sticker,
+.front.s-classic .sticker,
 .back .sticker {
-  background: linear-gradient(145deg, #ffe5b5, #ba7841 58%, #f9cf8d);
+  background: linear-gradient(130deg, #fff5bd 0%, #b87a27 17%, #ffe99d 37%, #88521c 65%, #f7d477 100%);
+  box-shadow: inset 0 0 .3em rgb(255 255 255 / .55);
 }
 
-.front.s-ticket .surface,
+.front.s-classic .surface,
 .back .surface {
   background:
-    radial-gradient(circle at 100% 0%, rgb(199 130 69 / .28), transparent 46%),
-    linear-gradient(150deg, #30202d, #1b1423 70%);
-  border: .07em solid rgb(255 225 164 / .35);
+    radial-gradient(circle at 17% 9%, rgb(242 198 108 / .26), transparent 36%),
+    radial-gradient(circle at 90% 91%, rgb(136 83 175 / .24), transparent 46%),
+    linear-gradient(155deg, #252741, #0d1020 73%);
+  border: .08em solid rgb(255 226 148 / .63);
 }
 
-.front.s-ticket .photo {
-  border: .16em solid #f1c68c;
-  background: #3a2833;
-  box-shadow: 0 .35em .9em rgb(0 0 0 / .35);
+.front.s-classic .sticker::before,
+.front.s-classic .sticker::after {
+  position: absolute;
+  z-index: 5;
+  color: #fff5c5;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow: 0 0 .2em #fff, 0 0 .5em #f9c756;
+  animation: star-pulse 2.2s ease-in-out infinite alternate;
+}
+.front.s-classic .sticker::before { content: "✦"; top: .14em; right: .22em; font-size: 1.2em; }
+.front.s-classic .sticker::after { content: "✧"; bottom: .2em; left: .32em; font-size: 1.45em; animation-delay: .8s; }
+
+.front.s-classic .photo {
+  border: .16em solid #f5d77d;
+  background: #171827;
+  box-shadow: 0 0 0 .07em #fff0ac, 0 .45em .9em rgb(0 0 0 / .5);
+}
+.front.s-classic .photo img { filter: contrast(1.06) saturate(.88); }
+
+.front.s-classic .photo::before {
+  content: "✦ LEGENDARY  ·  1 OF 1";
+  position: absolute;
+  z-index: 2;
+  top: .5em;
+  left: .5em;
+  padding: .42em .65em;
+  border: .06em solid #ffec9d;
+  border-radius: .25em;
+  background: linear-gradient(110deg, #24223a, #8b5c28);
+  color: #fff1b8;
+  font: 800 .55em/1 'Space Mono', monospace;
+  letter-spacing: .04em;
+  box-shadow: 0 .2em .5em rgb(0 0 0 / .4);
 }
 
-.front.s-ticket .photo::after {
-  content: "THE PHENOMENAL ONE";
+.front.s-classic .photo::after {
+  content: "BOSS OF THE HOST";
   position: absolute;
   right: .45em;
   bottom: .45em;
   left: .45em;
-  padding: .35em .5em;
-  border: .06em solid rgb(255 224 170 / .65);
-  border-radius: .3em;
-  background: rgb(28 18 29 / .8);
-  color: #ffe0aa;
-  font: 800 .49em/1.2 'Space Mono', monospace;
-  letter-spacing: .06em;
+  padding: .4em .5em;
+  border: .06em solid rgb(255 231 163 / .8);
+  border-radius: .25em;
+  background: rgb(9 10 23 / .88);
+  color: #ffe4a3;
+  font: 800 .55em/1.2 'Space Mono', monospace;
+  letter-spacing: .1em;
   text-align: center;
 }
 
-.front.s-ticket .name {
-  margin-top: .9em;
-  color: #ffe1a4;
-  letter-spacing: .02em;
-  text-shadow: 0 .12em .1em rgb(0 0 0 / .3);
+.front.s-classic .name {
+  margin-top: .52em;
+  color: #ffe59c;
+  letter-spacing: .035em;
+  text-shadow: 0 .08em 0 #765322, 0 0 .45em rgb(253 212 107 / .42);
+}
+.front.s-classic .title { color: #fff2cb; opacity: 1; font-size: .72em; }
+.front .emoji-bubble {
+  background: radial-gradient(circle at 30% 25%, #fff9d9, #d8a944);
+  box-shadow: 0 .25em .55em rgb(0 0 0 / .4), 0 0 .6em rgb(255 221 127 / .7);
 }
 
-.front.s-ticket .title { color: #fff3df; opacity: 1; }
-.front.s-ticket .perf { border-color: rgb(255 225 164 / .6); }
-.front.s-ticket .stub { color: #f8d7a2; opacity: .9; }
-.front .emoji-bubble { background: #fff0d0; }
+.front.f-glitter .foil {
+  background:
+    radial-gradient(circle at 14% 11%, #fff 0 .08em, transparent .11em),
+    radial-gradient(circle at 83% 16%, #fff2b0 0 .08em, transparent .12em),
+    radial-gradient(circle at 25% 35%, #fff 0 .055em, transparent .09em),
+    radial-gradient(circle at 75% 43%, #ffe29a 0 .07em, transparent .1em),
+    radial-gradient(circle at 9% 63%, #fff4c8 0 .075em, transparent .11em),
+    radial-gradient(circle at 91% 79%, #fff 0 .09em, transparent .12em),
+    radial-gradient(circle at 36% 91%, #ffe29a 0 .065em, transparent .1em),
+    linear-gradient(115deg, transparent 35%, rgb(255 229 148 / .22) 48%, transparent 60%);
+  -webkit-mask: none;
+  mask: none;
+  mix-blend-mode: screen;
+  opacity: .8;
+  animation: elite-sparkle 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes elite-sparkle {
+  from { opacity: .55; filter: brightness(.9); }
+  to { opacity: 1; filter: brightness(1.7); }
+}
+@keyframes star-pulse {
+  from { opacity: .55; scale: .8; }
+  to { opacity: 1; scale: 1.12; }
+}
 
 .back .card-back {
-  background: linear-gradient(155deg, #fff7e9, #f5e5d1);
-  color: #3b2730;
+  background: linear-gradient(155deg, #fff9e8, #f1e1b7);
+  color: #30283a;
+  box-shadow: inset 0 0 0 .08em #e8c66f, 0 .3em .8em rgb(0 0 0 / .18);
 }
-.back .back-name { color: #5b3440; }
-.back .handle { color: #8c4d2a; font-size: .56em; letter-spacing: -.03em; white-space: nowrap; }
-.back .facts li { background: #ead5be; color: #513040; }
-.back .share { color: #211521; }
+.back .back-name { color: #5d4123; }
+.back .handle { color: #875a25; font-size: .56em; letter-spacing: -.03em; white-space: nowrap; }
+.back .facts li { background: #e9d49a; color: #342923; }
+.back .share { color: #211a18; }
+
+@media (prefers-reduced-motion: reduce) {
+  .front.s-classic .sticker::before,
+  .front.s-classic .sticker::after,
+  .front.f-glitter .foil { animation: none; }
+}

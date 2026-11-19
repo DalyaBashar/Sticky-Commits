@@ -1,26 +1,26 @@
 {
   "$schema": "../../card.schema.json",
   "name": "Amir Khalid",
-  "title": "Code • coffee • magic",
+  "title": "Manager cameo · final boss",
   "github": "ThePhenomenalOne1",
-  "emoji": "☕",
-  "shape": "ticket",
-  "finish": "glossy",
-  "pattern": "grid",
+  "emoji": "👑",
+  "shape": "classic",
+  "finish": "glitter",
+  "pattern": "stars",
   "font": "Righteous",
   "colors": {
-    "background": "#24151f",
-    "text": "#fff3df",
-    "accent": "#c78245",
-    "name": "#ffe1a4"
+    "background": "#111324",
+    "text": "#fff1c7",
+    "accent": "#e8bc57",
+    "name": "#ffe59c"
   },
   "attach": "none",
   "tilt": -3,
-  "about": "I build curious tools across Python, Dart and the web—from image experiments to practical apps.",
+  "about": "The host's boss, making a legendary cameo. I build with Python, Dart and the web.",
   "facts": [
+    "👑 Rarity: one of one",
     "🪄 Black magic forkery",
-    "🐍 Python · Dart · web",
-    "☕ Coffee cameo"
+    "🐍 Python · Dart · web"
   ],
   "css": "style.css"
 }
