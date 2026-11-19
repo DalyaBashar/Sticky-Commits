@@ -109,13 +109,18 @@
 }
 
 .back .card-back {
+  gap: .35em;
+  padding: .75em .8em .65em;
   background: linear-gradient(155deg, #fff9e8, #f1e1b7);
   color: #30283a;
   box-shadow: inset 0 0 0 .08em #e8c66f, 0 .3em .8em rgb(0 0 0 / .18);
 }
+.back .avatar { width: 2.7em; height: 2.7em; }
 .back .back-name { color: #5d4123; }
 .back .handle { color: #875a25; font-size: .56em; letter-spacing: -.03em; white-space: nowrap; }
-.back .facts li { background: #e9d49a; color: #342923; }
+.back .about { font-size: .7em; line-height: 1.32; -webkit-line-clamp: unset; }
+.back .facts { gap: .2em; }
+.back .facts li { padding: .2em .55em; background: #e9d49a; color: #342923; font-size: .62em; }
 .back .share { color: #211a18; }
 
 @media (prefers-reduced-motion: reduce) {
