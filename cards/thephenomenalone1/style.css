@@ -1,0 +1,60 @@
+:host {
+  --edge: #f1c68c;
+  --shadow-rgb: 30 13 24;
+}
+
+.front.s-ticket .sticker,
+.back .sticker {
+  background: linear-gradient(145deg, #ffe5b5, #ba7841 58%, #f9cf8d);
+}
+
+.front.s-ticket .surface,
+.back .surface {
+  background:
+    radial-gradient(circle at 100% 0%, rgb(199 130 69 / .28), transparent 46%),
+    linear-gradient(150deg, #30202d, #1b1423 70%);
+  border: .07em solid rgb(255 225 164 / .35);
+}
+
+.front.s-ticket .photo {
+  border: .16em solid #f1c68c;
+  background: #3a2833;
+  box-shadow: 0 .35em .9em rgb(0 0 0 / .35);
+}
+
+.front.s-ticket .photo::after {
+  content: "THE PHENOMENAL ONE";
+  position: absolute;
+  right: .45em;
+  bottom: .45em;
+  left: .45em;
+  padding: .35em .5em;
+  border: .06em solid rgb(255 224 170 / .65);
+  border-radius: .3em;
+  background: rgb(28 18 29 / .8);
+  color: #ffe0aa;
+  font: 800 .49em/1.2 'Space Mono', monospace;
+  letter-spacing: .06em;
+  text-align: center;
+}
+
+.front.s-ticket .name {
+  margin-top: .9em;
+  color: #ffe1a4;
+  letter-spacing: .02em;
+  text-shadow: 0 .12em .1em rgb(0 0 0 / .3);
+}
+
+.front.s-ticket .title { color: #fff3df; opacity: 1; }
+.front.s-ticket .perf { border-color: rgb(255 225 164 / .6); }
+.front.s-ticket .stub { color: #f8d7a2; opacity: .9; }
+.front .emoji-bubble { background: #fff0d0; }
+
+.back .card-back {
+  background: linear-gradient(155deg, #fff7e9, #f5e5d1);
+  color: #3b2730;
+}
+.back .back-name { color: #5b3440; }
+.back .handle { color: #8c4d2a; font-size: .56em; letter-spacing: -.03em; white-space: nowrap; }
+.back .facts li { background: #ead5be; color: #513040; }
+.back .share { color: #211521; }

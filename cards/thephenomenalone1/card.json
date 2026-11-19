@@ -1,0 +1,26 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "Amir Khalid",
+  "title": "Code • coffee • magic",
+  "github": "ThePhenomenalOne1",
+  "emoji": "☕",
+  "shape": "ticket",
+  "finish": "glossy",
+  "pattern": "grid",
+  "font": "Righteous",
+  "colors": {
+    "background": "#24151f",
+    "text": "#fff3df",
+    "accent": "#c78245",
+    "name": "#ffe1a4"
+  },
+  "attach": "none",
+  "tilt": -3,
+  "about": "I build curious tools across Python, Dart and the web—from image experiments to practical apps.",
+  "facts": [
+    "🪄 Black magic forkery",
+    "🐍 Python · Dart · web",
+    "☕ Coffee cameo"
+  ],
+  "css": "style.css"
+}
