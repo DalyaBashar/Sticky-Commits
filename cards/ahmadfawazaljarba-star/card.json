@@ -1,0 +1,19 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "Ahmed",
+  "title": "the one and only",
+  "emoji": "👌",
+  "shape": "classic",
+  "finish": "glitter",
+  "pattern": "none",
+  "font": "Fredoka",
+  "colors": {
+    "background": "#4C175A",
+    "text": "#FFFFFF",
+    "accent": "#A15DEA"
+  },
+  "image": "photo.jpg",
+  "attach": "tape",
+  "about": "i couldn't think of anything 😫😫"
+  
+}
