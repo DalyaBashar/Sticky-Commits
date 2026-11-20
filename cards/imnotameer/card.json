@@ -1,0 +1,22 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "DIO",
+  "title": "ZA WARUDO! ⏱️",
+  "image": "dio.jpg",
+  "imageFit": "contain",
+  "imagePosition": "50% 50%",
+  "emoji": "🧛",
+  "shape": "classic",
+  "finish": "holo",
+  "pattern": "dots",
+  "font": "Bangers",
+  "colors": {
+    "background": "#f5c518",
+    "text": "#1a0b2e",
+    "accent": "#7b2cbf"
+  },
+  "attach": "tape",
+  "tilt": 3,
+  "about": "MUDA MUDA MUDA! I, Dio, have surpassed humanity and now I'm adding a sticker to this wall. Za Warudo, toki wo tomare!",
+  "facts": ["🕐 can stop time for 9 seconds", "🍞 loves road rollers", "🧛 WRYYYYYY"]
+}
