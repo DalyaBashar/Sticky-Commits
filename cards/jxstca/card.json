@@ -1,0 +1,27 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "MINAS",
+  "title": "PRACTICE MAKES PERFECT",
+  "image": "goat-main.jpg",
+  "imageFit": "cover",
+  "imagePosition": "50% 50%",
+  "shape": "classic",
+  "finish": "holo",
+  "pattern": "none",
+  "font": "Cinzel",
+  "colors": {
+    "background": "#0A0A0C",
+    "text": "#E8ECEF",
+    "accent": "#B80F1A",
+    "name": "#F4F6F8"
+  },
+  "attach": "none",
+  "tilt": 0,
+  "css": "style.css",
+ "about": "Hi, I'm Minas and these are a few things about me. I love games, Real Madrid and music. I code through the night between matches.",
+"facts": [
+  "Hala Madrid forever",
+  "Gamer at heart",
+  "Music always on"
+]
+}
