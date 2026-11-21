@@ -1,19 +1,21 @@
 {
   "$schema": "../../card.schema.json",
-  "name": "Ahmed",
-  "title": "the one and only",
-  "emoji": "👌",
+  "name": "The Knight",
+  "title": "'Ghost of Hallownest, you posses the strength I lacked...'",
+  "emoji": "⚔️",
   "shape": "classic",
-  "finish": "glitter",
+  "finish": "holo",
   "pattern": "none",
-  "font": "Fredoka",
+  "font": "Pacifico",
   "colors": {
-    "background": "#4C175A",
-    "text": "#FFFFFF",
-    "accent": "#A15DEA"
+    "background": "#171923",
+    "text": "#14A3EB",
+    "accent": "#171923",
+    "name": "#ffffff"
   },
   "image": "photo.jpg",
   "attach": "tape",
-  "about": "i couldn't think of anything 😫😫"
+  "css": "style.css",
+  "about": "' in wilds beyond they speak your name with reverance and regret, for none could tame our savage souls but you the challenge met ' -elegy for Hallownest"
   
 }
