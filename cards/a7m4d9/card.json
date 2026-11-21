@@ -1,0 +1,27 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "Ahmad",
+  "image": "kurdd.gif",
+  "imageFit": "cover",
+  "imagePosition": "center",
+  "title": "Bzhi Kurd o Kurdistan ☀️",
+  "emoji": "☀️",
+  "shape": "classic",
+  "finish": "glossy",
+  "pattern": "none",
+  "font": "Abril Fatface",
+  "colors": {
+    "background": "#101010",
+    "text": "#FFFFFF",
+    "accent": "#D4AF37",
+    "name": "#D4AF37"
+  },
+  "attach": "pin",
+  "css": "style.css",
+  "about": "My roots are my pride, my culture is my strength, and Kurdistan will always have a place in my heart. Bzhi Kurd o Kurdistan! ☀️",
+  "facts": [
+    "❤️ Proud of my Kurdish heritage",
+    "☀️ The golden sun of Kurdistan",
+    "💚 One land, a thousand stories"
+  ]
+}
