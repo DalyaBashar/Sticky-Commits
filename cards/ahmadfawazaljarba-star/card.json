@@ -1,7 +1,7 @@
 {
   "$schema": "../../card.schema.json",
   "name": "The Knight",
-  "title": "Wanderer of Hallownest ✨",
+  "title": "'Ghost of Hallownest, you posses the strength I lacked...'",
   "emoji": "⚔️",
   "shape": "classic",
   "finish": "holo",
@@ -16,6 +16,6 @@
   "image": "photo.jpg",
   "attach": "tape",
   "css": "style.css",
-  "about": "'in wilds beyond they speak your name with reverance and regret, for none could tame our savage hearts but you the challenge met' -elegy of Hallownest"
+  "about": "' in wilds beyond they speak your name with reverance and regret, for none could tame our savage souls but you the challenge met ' -elegy for Hallownest"
   
 }
