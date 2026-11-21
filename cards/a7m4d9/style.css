@@ -1,0 +1,415 @@
+:host {
+  --edge: #D4AF37;
+  --accent: #D4AF37;
+  --shadow-rgb: 10 10 10;
+}
+
+.front.s-classic .sticker,
+.back .sticker {
+  padding: 0.2em;
+  border-radius: 1.1em;
+  background: linear-gradient(
+    135deg,
+    #FFF0A0,
+    #B88632 25%,
+    #FFE49A 50%,
+    #795019 75%,
+    #F5D77C
+  );
+}
+
+.front.s-classic .sticker,
+:host([data-hover]) .front.s-classic .sticker {
+  clip-path: none;
+}
+
+.front.s-classic .sticker {
+  animation: goldenPulse 3s ease-in-out infinite;
+}
+
+.front.s-classic .surface {
+  padding: 0.55em;
+  border-radius: 0.9em;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      #29452D,
+      transparent 65%
+    ),
+    linear-gradient(
+      160deg,
+      #101010,
+      #1C1B10,
+      #101010
+    );
+}
+
+.front .surface::before {
+  content: "✦ GOLDEN SUN EDITION ✦";
+  display: block;
+  text-align: center;
+  color: #F5D77C;
+  font-size: 0.48em;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 0.6em #D4AF37;
+  animation: goldenText 3s ease-in-out infinite;
+}
+
+.front .surface::after {
+  content: "";
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  bottom: 0.3em;
+  height: 0.25em;
+  border-radius: 1em;
+  background: linear-gradient(
+    90deg,
+    #CE2028 0%,
+    #CE2028 33%,
+    #FFFFFF 33%,
+    #FFFFFF 66%,
+    #168A49 66%
+  );
+  box-shadow: 0 0 0.35em #D4AF37;
+}
+
+.front.s-classic .photo {
+  width: 100%;
+  height: 12.7em;
+  position: relative;
+  overflow: hidden;
+  border: 0.13em solid #D4AF37;
+  border-radius: 0.7em;
+  background: #101010;
+  box-shadow:
+    0 0 0.5em #D4AF3766,
+    inset 0 0 1em #000000;
+}
+
+.front.s-classic .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: contrast(1.08) saturate(1.12);
+  transition:
+    transform 0.8s ease,
+    filter 0.8s ease;
+}
+
+:host([data-hover]) .front .photo img {
+  transform: scale(1.06);
+  filter: contrast(1.12) saturate(1.2);
+}
+
+.front .photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    #FFEAA422 45%,
+    #FFFFFF44 50%,
+    #FFEAA422 55%,
+    transparent 70%
+  );
+  background-size: 250% 100%;
+  animation: sunShine 5s linear infinite;
+}
+
+.front .photo::after {
+  content: "";
+  position: absolute;
+  right: 0.45em;
+  bottom: 0.45em;
+  width: 5em;
+  height: 5em;
+  z-index: 3;
+  pointer-events: none;
+  border: 0.16em solid #F5D77C;
+  border-radius: 0.7em;
+  background: url("leader.gif") center / cover no-repeat;
+  box-shadow:
+    0 0 0.45em #D4AF37,
+    0 0 1em #D4AF3777;
+  animation: leaderFloat 3.5s ease-in-out infinite;
+}
+
+.front.s-classic .name {
+  font-family: Georgia, serif;
+  color: #F5D77C;
+  font-size: 1.3em;
+  margin: 0.3em 0 0;
+  text-align: center;
+  text-shadow:
+    0 0 0.3em #D4AF37,
+    0 0 0.7em #D4AF3755;
+  letter-spacing: 0.05em;
+}
+
+.front.s-classic .title {
+  color: #FFFFFF;
+  font-size: 0.68em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.18em;
+  opacity: 1;
+  text-shadow: 0 0 0.4em #000000;
+}
+
+.front .emoji-bubble {
+  top: 12em;
+  right: 0.55em;
+  width: 1.65em;
+  height: 1.65em;
+  background: #101010;
+  border: 0.1em solid #D4AF37;
+  box-shadow: 0 0 0.5em #D4AF37;
+  z-index: 5;
+}
+
+.front .emoji-bubble span {
+  font-size: 0.95em;
+}
+
+.front .pin {
+  z-index: 6;
+  width: 1.25em;
+  height: 1.25em;
+  background: radial-gradient(
+    circle at 30% 25%,
+    #88919A,
+    #414750 45%,
+    #111418 85%
+  );
+  border: 0.09em solid #D4AF37;
+  box-shadow:
+    0 0 0.3em #D4AF37,
+    0.2em 0.3em 0.3em #00000099;
+}
+
+.front .peel {
+  display: none;
+}
+
+.front .sticker::after {
+  content: "";
+  position: absolute;
+  inset: 10% 5%;
+  z-index: 4;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 80%, #FFD866 0 0.045em, transparent 0.08em),
+    radial-gradient(circle at 70% 50%, #FFFFFF 0 0.035em, transparent 0.07em),
+    radial-gradient(circle at 35% 35%, #FFD866 0 0.04em, transparent 0.08em),
+    radial-gradient(circle at 90% 75%, #FFD866 0 0.035em, transparent 0.07em),
+    radial-gradient(circle at 55% 15%, #FFFFFF 0 0.04em, transparent 0.08em);
+  animation: floatingStars 4s linear infinite;
+}
+
+.flipper {
+  transition: transform 1.1s cubic-bezier(
+    0.22, 0.8, 0.22, 1
+  );
+}
+
+.back .surface {
+  padding: 0.4em;
+  border-radius: 0.9em;
+  background: #101010;
+}
+
+.back .card-back {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 0.1em solid #D4AF37;
+  border-radius: 0.7em;
+  padding: 0.7em 0.55em;
+  gap: 0.5em;
+  color: #FFFFFF;
+  background:
+    linear-gradient(
+      180deg,
+      #00000055 0%,
+      #00000088 45%,
+      #000000EE 100%
+    ),
+    url("citys.gif") center / cover no-repeat;
+  box-shadow:
+    inset 0 0 1em #000000,
+    0 0 0.6em #D4AF3755;
+}
+
+.back .card-back::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 0.6em;
+  box-shadow: inset 0 0 1.2em #D4AF3755;
+  animation: backLight 3s ease-in-out infinite;
+}
+
+.back .card-back::after {
+  content: "";
+  position: absolute;
+  left: 0.6em;
+  right: 0.6em;
+  bottom: 0.3em;
+  height: 0.2em;
+  background: linear-gradient(
+    90deg,
+    #CE2028 33%,
+    #FFFFFF 33% 66%,
+    #168A49 66%
+  );
+  border-radius: 1em;
+  pointer-events: none;
+}
+
+.back .who {
+  position: relative;
+  background: #00000099;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  border: 0.06em solid #D4AF3777;
+}
+
+.back .avatar {
+  background: #101010;
+  box-shadow:
+    0 0 0 0.12em #D4AF37,
+    0 0 0.5em #D4AF37;
+}
+
+.back .back-name {
+  color: #FFE49A;
+  font-family: Georgia, serif;
+  text-shadow: 0 0 0.35em #D4AF37;
+}
+
+.back .handle {
+  color: #F5D77C;
+}
+
+.back .about {
+  margin-top: auto;
+  padding: 0.65em;
+  background: #000000CC;
+  border: 0.06em solid #D4AF3766;
+  border-radius: 0.5em;
+  color: #FFFFFF;
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.back .facts {
+  gap: 0.3em;
+}
+
+.back .facts li {
+  color: #FFFFFF;
+  border: 0.06em solid #D4AF37;
+  border-radius: 0.4em;
+  padding: 0.4em;
+  font-size: 0.62em;
+  rotate: 0;
+}
+
+.back .facts li:nth-child(1) {
+  background: #921E2DD9;
+}
+
+.back .facts li:nth-child(2) {
+  background: #796019D9;
+}
+
+.back .facts li:nth-child(3) {
+  background: #17663CD9;
+}
+
+.back .back-foot {
+  color: #FFE49A;
+}
+
+.back .share {
+  background: linear-gradient(
+    135deg,
+    #FFE49A,
+    #B88632
+  );
+  color: #101010;
+}
+
+:host([flipped]) .back .sticker {
+  animation: revealGold 1s ease-out;
+}
+
+@keyframes goldenPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 0.15em #D4AF37);
+  }
+  50% {
+    filter: drop-shadow(0 0 0.5em #D4AF37);
+  }
+}
+
+@keyframes goldenText {
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 1; }
+}
+
+@keyframes sunShine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -100% 0; }
+}
+
+@keyframes leaderFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.25em); }
+}
+
+@keyframes floatingStars {
+  0% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  30% { opacity: 0.9; }
+  70% { opacity: 0.7; }
+  100% {
+    transform: translateY(-3em);
+    opacity: 0;
+  }
+}
+
+@keyframes backLight {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes revealGold {
+  0% {
+    filter: brightness(1.8);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
