@@ -1,0 +1,21 @@
+{
+  "$schema": "../../card.schema.json",
+  "name": "Breaking News",
+  "title": "for the class of 2027",
+  "emoji": "🚨",
+  "shape": "classic",
+  "finish": "glossy",
+  "pattern": "rays",
+  "font": "Archivo Black",
+  "colors": {
+    "background": "linear-gradient(165deg,#fff8e6,#ffe3a0)",
+    "text": "#1c2a7a",
+    "accent": "#ffc83d",
+    "name": "#e0102f"
+  },
+  "attach": "tape",
+  "tilt": -2,
+  "about": "You will graduate soon 🎓 Class of 2027",
+  "image": "art.svg",
+  "css": "style.css"
+}
